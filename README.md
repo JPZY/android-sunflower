@@ -71,7 +71,7 @@ Libraries Used
   * [Glide][90] for image loading
   * [Kotlin Coroutines][91] for managing background threads with simplified code and reducing needs for callbacks
 
-[0]: https://developer.android.com/jetpack/foundation/
+[0]: https://developer.android.com/jetpack/components
 [1]: https://developer.android.com/topic/libraries/support-library/packages#v7-appcompat
 [2]: https://developer.android.com/kotlin/ktx
 [4]: https://developer.android.com/training/testing/
@@ -83,7 +83,7 @@ Libraries Used
 [16]: https://developer.android.com/topic/libraries/architecture/room
 [17]: https://developer.android.com/topic/libraries/architecture/viewmodel
 [18]: https://developer.android.com/topic/libraries/architecture/workmanager
-[30]: https://developer.android.com/jetpack/ui/
+[30]: https://developer.android.com/guide/topics/ui
 [31]: https://developer.android.com/training/animation/
 [34]: https://developer.android.com/guide/components/fragments
 [35]: https://developer.android.com/guide/topics/ui/declaring-layout
@@ -100,7 +100,7 @@ app? Please open a new [issue](https://github.com/googlesamples/android-sunflowe
 
 Android Studio IDE setup
 ------------------------
-For development, the latest version of Android Studio 3.3 is required. The latest version can be
+For development, the latest version of Android Studio is required. The latest version can be
 downloaded from [here](https://developer.android.com/studio/).
 
 Sunflower uses [ktlint](https://ktlint.github.io/) to enforce Kotlin coding styles.
@@ -139,7 +139,6 @@ injection to better understand Sunflower's code without having to learn DI.
 Support
 -------
 
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
 - Stack Overflow:
   - http://stackoverflow.com/questions/tagged/android
   - http://stackoverflow.com/questions/tagged/android-jetpack
