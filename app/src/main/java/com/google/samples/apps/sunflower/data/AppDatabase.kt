@@ -30,7 +30,24 @@ import com.google.samples.apps.sunflower.workers.SeedDatabaseWorker
 /**
  * The Room database for this app
  */
+
+/**
+ * /////////////////////Java/////////////
+ * Class c = person.getClass();  对象获取
+ * Class class = Person.class; 类获取
+ * ///////////////////kotlin//////////////////////
+ * 对象获取
+ * person.javaClass  //javaClass
+ * Person::class.java //javaClass
+ * 类获取
+ * Person::class // kClass
+ * Person.javaClass.kotlin //kClass
+ * (Person::class as any).javaClass  //javaClass
+ * Person::class.java //javaClass
+ *
+ */
 @Database(entities = [GardenPlanting::class, Plant::class], version = 1, exportSchema = false)
+//类型转换注解2.0以前加在属性上, 2.0以后加在类上
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun gardenPlantingDao(): GardenPlantingDao
@@ -43,6 +60,8 @@ abstract class AppDatabase : RoomDatabase() {
 
         fun getInstance(context: Context): AppDatabase {
             return instance ?: synchronized(this) {
+                //run apply let also with 的区别
+                //https://juejin.im/post/5a1be4cc51882512a86108f8
                 instance ?: buildDatabase(context).also { instance = it }
             }
         }

@@ -36,6 +36,7 @@ import java.util.Calendar
     foreignKeys = [ForeignKey(entity = Plant::class, parentColumns = ["id"], childColumns = ["plant_id"])],
     indices = [Index("plant_id")]
 )
+//类声明由类名、类头（指定其类型参数、主构造函数等）和由⼤括号包围的类体构成
 data class GardenPlanting(
     @ColumnInfo(name = "plant_id") val plantId: String,
 
